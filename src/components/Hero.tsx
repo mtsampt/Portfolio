@@ -5,8 +5,8 @@ import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react'
 import Image from 'next/image';
 
 const Hero = () => {
-  const scrollToAbout = () => {
-    document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })
+  const scrollToProjects = () => {
+    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -99,7 +99,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary flex items-center gap-2"
-                onClick={scrollToAbout}
+                onClick={scrollToProjects}
               >
                 View My Work
                 <ChevronDown className="w-5 h-5" />
